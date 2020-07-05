@@ -13,31 +13,16 @@ Resultado1:
 
 //\D retorna não números
 console.log( "Resultado2:")
-console.log(texto1.match(/\D/g))
+const texto2 = '1) casa 2) grama 3) bola de futebol 4) esporte 5) óculos 6) chuveiro'
+console.log(texto2.match(/\d\)\D+/g))
 /*
 Resultado2:
-[ ',',
-  ',',
-  ',',
-  ',',
-  ',',
-  ',',
-  'a',
-  '.',
-  'b',
-  ' ',
-  'c',
-  '!',
-  'd',
-  '?',
-  'e',
-  '\t',
-  '-',
-  '\n',
-  'f',
-  '_',
-  'g' ]
-
+[ '1) casa ',
+  '2) grama ',
+  '3) bola de futebol ',
+  '4) esporte ',
+  '5) óculos ',
+  '6) chuveiro' ]
 */
 
 //\w retorna caracteres [a-zA-Z0-9_]
